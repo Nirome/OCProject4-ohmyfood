@@ -1,0 +1,78 @@
+* {
+    font-family: "Roboto";
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        height: 2.75rem;
+        width: 10.125rem;
+        margin: 14px 89px 13px 89px;
+        padding: 0 19px 0 16px;
+        font-family: "shrikhand";
+    }
+    .search-bar {
+        display: flex;
+        gap: 17px;
+    }
+    #city {
+        border: none;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+.info-group {
+    background-color: $grey-background;
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        font-weight: 300;
+        text-align: center;
+    }
+    .btn {
+        height: 50px;
+        width: 218px;
+        border-radius: 25px;
+        background: linear-gradient(193deg, $primary-color -11.44%, $secondary-color 123.93%);
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+        color: white;
+        border: none;
+        font-size: 16px; 
+    }
+}
+
+.operation {
+    .operational-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        align-items: center;
+    }
+    .operating-step {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        background-color: $grey-background;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        height: 72px;
+        width: 322px;
+            .number-background {
+                width: 24px;
+                height: 24px;
+                border-radius: 25px;
+                background: $primary-color;
+                color: white;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+    } 
+}
+

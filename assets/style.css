@@ -1,0 +1,75 @@
+* {
+  font-family: "Roboto";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  height: 2.75rem;
+  width: 10.125rem;
+  margin: 14px 89px 13px 89px;
+  padding: 0 19px 0 16px;
+  font-family: "shrikhand";
+}
+header .search-bar {
+  display: flex;
+  gap: 17px;
+}
+header #city {
+  border: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+.info-group {
+  background-color: #F6F6F6;
+}
+.info-group h2 {
+  text-align: center;
+}
+.info-group h3 {
+  font-weight: 300;
+  text-align: center;
+}
+.info-group .btn {
+  height: 50px;
+  width: 218px;
+  border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.operation .operational-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: center;
+}
+.operation .operating-step {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  height: 72px;
+  width: 322px;
+}
+.operation .operating-step .number-background {
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  background: #9356DC;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

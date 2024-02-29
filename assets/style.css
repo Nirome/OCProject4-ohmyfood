@@ -15,13 +15,20 @@ header h1 {
   font-family: "shrikhand";
 }
 header .search-bar {
+  background-color: #EAEAEA;
+  height: 50px;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 17px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 header #city {
   border: none;
   font-size: 16px;
-  text-align: center;
+  color: #353535;
+  background-color: #EAEAEA;
 }
 
 .info-group {
@@ -29,10 +36,17 @@ header #city {
 }
 .info-group h2 {
   text-align: center;
+  padding-top: 39px;
+  margin-top: 0;
 }
 .info-group h3 {
   font-weight: 300;
   text-align: center;
+}
+.info-group div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 57px;
 }
 .info-group .btn {
   height: 50px;
@@ -45,6 +59,9 @@ header #city {
   font-size: 16px;
 }
 
+.operation h2 {
+  padding-left: 20px;
+}
 .operation .operational-steps {
   display: flex;
   flex-direction: column;
@@ -54,7 +71,7 @@ header #city {
 .operation .operating-step {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   background-color: #F6F6F6;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -64,12 +81,19 @@ header #city {
 .operation .operating-step .number-background {
   width: 24px;
   height: 24px;
-  border-radius: 25px;
+  border-radius: 24px;
   background: #9356DC;
   color: white;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
+  position: relative;
+  right: 10px;
+}
+.operation .operating-step img {
+  position: relative;
+  right: 8px;
+  bottom: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

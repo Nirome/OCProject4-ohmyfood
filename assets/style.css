@@ -27,7 +27,8 @@ header .search-bar {
   justify-content: center;
   align-items: center;
   gap: 17px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-left: 70px;
 }
 header #city {
   border: none;
@@ -64,8 +65,13 @@ header #city {
   font-size: 16px;
 }
 
+.operation {
+  padding-bottom: 68px;
+}
 .operation h2 {
   padding-left: 20px;
+  margin-top: 48px;
+  margin-bottom: 26px;
 }
 .operation .operational-steps {
   display: flex;
@@ -84,12 +90,14 @@ header #city {
   width: 322px;
 }
 .operation .operating-step .number-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
   border-radius: 24px;
   background: #9356DC;
   color: white;
-  text-align: center;
   font-size: 14px;
   font-weight: 500;
   position: relative;
@@ -111,6 +119,24 @@ header #city {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  padding-bottom: 66px;
+}
+.restaurants .restaurants-cards .card {
+  position: relative;
+}
+.restaurants .new {
+  display: flex;
+  position: absolute;
+  color: #008766;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #99E2D0;
+  height: 29px;
+  width: 80px;
 }
 .restaurants .card img {
   width: 100%;
@@ -122,7 +148,16 @@ header #city {
   display: flex;
   background-color: white;
   border-radius: 0px 0px 15px 15px;
-  padding: 16px 15px 12px 13px;
+  padding: 16px 25px 12px 13px;
+  justify-content: space-between;
+}
+.restaurants .card-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.restaurants h2 {
+  margin-top: 54px;
 }
 .restaurants h3 {
   margin: 0px;
@@ -132,17 +167,32 @@ header #city {
   font-weight: 300;
   margin: 0px;
 }
+.restaurants .card-rathing img {
+  height: 21px;
+  width: 22px;
+  position: relative;
+  top: 5px;
+}
 
 footer {
+  padding: 22px 25px;
   background-color: #353535;
 }
 footer h3 {
   font-family: "shrikhand";
   color: white;
   font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 16px;
 }
 footer p {
   color: white;
+  margin: 0px;
+  padding-bottom: 7px;
+}
+footer .footer-content {
+  display: flex;
+  gap: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

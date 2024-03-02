@@ -1,9 +1,8 @@
 .menu-header {
-    display: flex;
-    flex-direction: row;
-    img {
+    a {
         position: absolute;
         left: 17px;
+        top: 25px;
     }
 }
 
@@ -11,8 +10,7 @@
     img {
         height: 275px;
         width: 100%;
-        object-fit: cover;
-                
+        object-fit: cover;          
     }
 }
 
@@ -20,15 +18,21 @@
     background-color: $grey-background;
     border-radius: 45px 45px 0px 0px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
     gap: 40px;
+    position: relative;
+    bottom: 42px;
    
     .restaurant-title {
         display: flex;
-        justify-content: space-around;
-        margin-top: 15px;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 15px;  
     }
+        img {
+            position: relative;
+            top: 15px;
+        }
     .dishes {
         display: flex;
         flex-direction: column;
@@ -49,12 +53,17 @@
             font-family: $font-family-title;
             font-size: 28px;
             font-weight: 400;
+            margin-bottom: 0;
+            height: 27px;
         }
         h3 {
             font-size: 16px;
             font-weight: 300;
-            border-bottom: 2px solid $tertiary-color;
-
+            border-bottom: 3px solid $tertiary-color;
+            padding-bottom: 8px;
+            width: 40px;  
+            margin-bottom: 0px;  
+            margin-top: 0;
         }
         p {
             font-size: 15px;
@@ -64,6 +73,7 @@
         .price {
             font-size: 15px;
             font-weight: 700;
+            color: #353535;
         }
         .menu-card-content {
             font-size: 18px;
@@ -74,4 +84,12 @@
             display: flex;
             justify-content: space-between;
         }
+    .div-btn {
+        align-self: center;
+    }
+    .btn {
+        margin-bottom: 40px;
+        width: 186px;
+    }
 }
+

@@ -27,6 +27,7 @@ header .search-bar {
   justify-content: center;
   align-items: center;
   gap: 17px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   padding-left: 70px;
 }
 header #city {
@@ -52,16 +53,6 @@ header #city {
   display: flex;
   justify-content: center;
   padding-bottom: 57px;
-}
-.info-group .btn {
-  height: 50px;
-  width: 218px;
-  border-radius: 25px;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  color: white;
-  border: none;
-  font-size: 16px;
 }
 
 .operation {
@@ -194,13 +185,10 @@ footer .footer-content {
   gap: 11px;
 }
 
-.menu-header {
-  display: flex;
-  flex-direction: row;
-}
-.menu-header img {
+.menu-header a {
   position: absolute;
   left: 17px;
+  top: 25px;
 }
 
 .image img {
@@ -215,11 +203,18 @@ footer .footer-content {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  position: relative;
+  bottom: 42px;
 }
 .menu-card .restaurant-title {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
   margin-top: 15px;
+}
+.menu-card img {
+  position: relative;
+  top: 15px;
 }
 .menu-card .dishes {
   display: flex;
@@ -240,11 +235,17 @@ footer .footer-content {
   font-family: "shrikhand";
   font-size: 28px;
   font-weight: 400;
+  margin-bottom: 0;
+  height: 27px;
 }
 .menu-card h3 {
   font-size: 16px;
   font-weight: 300;
-  border-bottom: 2px solid #99E2D0;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 8px;
+  width: 40px;
+  margin-bottom: 0px;
+  margin-top: 0;
 }
 .menu-card p {
   font-size: 15px;
@@ -254,6 +255,7 @@ footer .footer-content {
 .menu-card .price {
   font-size: 15px;
   font-weight: 700;
+  color: #353535;
 }
 .menu-card .menu-card-content {
   font-size: 18px;
@@ -263,6 +265,24 @@ footer .footer-content {
 .menu-card .card-more {
   display: flex;
   justify-content: space-between;
+}
+.menu-card .div-btn {
+  align-self: center;
+}
+.menu-card .btn {
+  margin-bottom: 40px;
+  width: 186px;
+}
+
+.btn {
+  height: 50px;
+  width: 218px;
+  border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  border: none;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

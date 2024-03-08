@@ -1,0 +1,50 @@
+footer {
+    padding: 22px 25px;
+    background-color: #353535;
+
+    .mentions {
+        @media (min-width: 1024px) and (max-width: 1440px) {
+            display: flex;
+            justify-content: flex-end;
+            gap: 9px;
+            position: relative;
+            right: 220px;   
+        }
+    }
+
+    h3 {
+        font-family: "shrikhand";
+        color: #ffff;
+        font-weight: 400;
+        margin-top: 0px;
+        margin-bottom: 16px;
+
+        @media (min-width: 1024px) and (max-width: 1440px) {
+            text-align: end;
+            position: relative;
+            top: 34px;
+            right: 35px;
+        }
+    } 
+    .footer-content {
+        display: flex;
+        gap: 11px;
+
+        @media (min-width: 1024px) and (max-width: 1440px) {
+            position: relative;
+            right: 50px;
+        }
+    }
+    p {
+        color: #ffff;
+        margin: 0px;
+        padding-bottom: 7px;
+        font-size: 14px;
+    }
+    .font-weight-300 {
+        font-weight: 300;
+    }
+}
+
+       
+

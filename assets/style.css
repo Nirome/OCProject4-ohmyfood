@@ -59,14 +59,8 @@ header #city {
   padding-bottom: 68px;
 }
 .operation h2 {
-  padding-left: 20px;
   margin-top: 48px;
   margin-bottom: 26px;
-}
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .operation h2 {
-    padding-left: 180px;
-  }
 }
 .operation .operational-steps {
   display: flex;
@@ -78,7 +72,14 @@ header #city {
   .operation .operational-steps {
     flex-direction: row;
     justify-content: center;
+    gap: 25px;
   }
+}
+.operation .operation-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .operation .operating-step {
   display: flex;
@@ -89,6 +90,8 @@ header #city {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   height: 72px;
   width: 322px;
+  position: relative;
+  left: 9px;
 }
 .operation .operating-step .number-background {
   display: flex;
@@ -118,15 +121,26 @@ header #city {
 }
 .restaurants .restaurants-cards {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 18px;
   padding-bottom: 66px;
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   .restaurants .restaurants-cards {
-    align-items: center;
-    gap: 50px;
+    align-content: center;
+    gap: 28px;
     padding-bottom: 30px;
+  }
+}
+.restaurants .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .restaurants .cards {
+    gap: 50px;
   }
 }
 .restaurants .cards-rows {
@@ -162,7 +176,7 @@ header #city {
   height: 29px;
   width: 80px;
 }
-.restaurants .card img {
+.restaurants .illustration {
   width: 100%;
   height: 231px;
   object-fit: cover;
@@ -184,6 +198,11 @@ header #city {
   margin-top: 54px;
   margin-bottom: 6px;
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .restaurants h2 {
+    margin-bottom: 0px;
+  }
+}
 .restaurants h3 {
   margin: 0px;
 }
@@ -197,48 +216,6 @@ header #city {
   width: 22px;
   position: relative;
   top: 5px;
-}
-
-footer {
-  padding: 22px 25px;
-  background-color: #353535;
-}
-@media (min-width: 1024px) and (max-width: 1440px) {
-  footer .mentions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 4px;
-    position: relative;
-    right: 220px;
-  }
-}
-footer h3 {
-  font-family: "shrikhand";
-  color: white;
-  font-weight: 400;
-  margin-top: 0px;
-  margin-bottom: 16px;
-}
-@media (min-width: 1024px) and (max-width: 1440px) {
-  footer h3 {
-    text-align: end;
-    position: relative;
-    top: 34px;
-    right: 35px;
-  }
-}
-footer .footer-content {
-  display: flex;
-  gap: 11px;
-}
-footer p {
-  color: white;
-  margin: 0px;
-  padding-bottom: 7px;
-  font-size: 14px;
-}
-footer .font-weight-300 {
-  font-weight: 300;
 }
 
 .menu-header a {
@@ -261,6 +238,14 @@ footer .font-weight-300 {
   gap: 40px;
   position: relative;
   bottom: 42px;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .menu-card {
+    margin-left: 193px;
+    margin-right: 192px;
+    padding-left: 210px;
+    padding-right: 211px;
+  }
 }
 .menu-card .restaurant-title {
   display: flex;
@@ -339,6 +324,54 @@ footer .font-weight-300 {
   color: white;
   border: none;
   font-size: 16px;
+}
+
+footer {
+  padding: 22px 25px;
+  background-color: #353535;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  footer .mentions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px;
+    position: relative;
+    right: 220px;
+  }
+}
+footer h3 {
+  font-family: "shrikhand";
+  color: white;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  footer h3 {
+    text-align: end;
+    position: relative;
+    top: 34px;
+    right: 35px;
+  }
+}
+footer .footer-content {
+  display: flex;
+  gap: 11px;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  footer .footer-content {
+    position: relative;
+    right: 50px;
+  }
+}
+footer p {
+  color: white;
+  margin: 0px;
+  padding-bottom: 7px;
+  font-size: 14px;
+}
+footer .font-weight-300 {
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -181,6 +181,7 @@ header #city {
   height: 231px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+  margin-bottom: -4px;
 }
 .restaurants .card-content {
   display: flex;
@@ -238,6 +239,7 @@ header #city {
   gap: 40px;
   position: relative;
   bottom: 42px;
+  margin-bottom: -42px;
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   .menu-card {
@@ -316,14 +318,34 @@ header #city {
 }
 
 .btn {
-  height: 50px;
-  width: 218px;
   border-radius: 25px;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  font-size: 16px;
+  height: 50px;
+  width: 218px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   color: white;
   border: none;
-  font-size: 16px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  border-radius: 25px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 500ms;
 }
 
 footer {
@@ -364,7 +386,7 @@ footer .footer-content {
     right: 50px;
   }
 }
-footer p {
+footer p, footer a {
   color: white;
   margin: 0px;
   padding-bottom: 7px;

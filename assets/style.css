@@ -255,10 +255,6 @@ header #city {
   gap: 30px;
   margin-top: 15px;
 }
-.menu-card img {
-  position: relative;
-  top: 15px;
-}
 .menu-card .dishes {
   display: flex;
   flex-direction: column;
@@ -346,6 +342,27 @@ header #city {
   opacity: 0;
   z-index: -1;
   transition: opacity 500ms;
+}
+
+.card-rathing .liked {
+  opacity: 0;
+  transition: 500ms;
+}
+.card-rathing .no-liked {
+  position: relative;
+  left: 22px;
+}
+.card-rathing input {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  right: 10px;
+  bottom: 10px;
+  height: 50px;
+  width: 50px;
+}
+.card-rathing input:checked + label .liked {
+  opacity: 1;
 }
 
 footer {

@@ -24,11 +24,9 @@
     bottom: 42px;
     margin-bottom: -42px;
 
-    @media (min-width: 1024px) and (max-width: 1440px) {
-        margin-left: 193px;
-        margin-right: 192px;
-        padding-left: 210px;
-        padding-right: 211px;
+    @media (min-width: 720px) {
+        margin: 0px 192px 0px 193px;      
+        padding: 0px 211px 0px 210px;      
     }
     
     .restaurant-title {
@@ -37,7 +35,10 @@
         gap: 30px;
         margin-top: 15px;  
     }
-        
+        img {
+            position: relative;
+            top: 30px;
+        }
     .dishes {
         display: flex;
         flex-direction: column;
@@ -47,13 +48,17 @@
     }
         article {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             background-color: #fff;
             border-radius: 15px;
+            height: 72px;
+            gap: 5px; 
+            position: relative;
+        }  
+        .card-more {
             padding: 15px;
-            gap: 5px;
-    
-        }    
+            overflow: hidden;
+        }
         h2 {
             font-family: $font-family-title;
             font-size: 28px;
@@ -74,11 +79,23 @@
             font-size: 15px;
             font-weight: 300;
             margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+           
+        }
+        h4 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         .price {
             font-size: 15px;
             font-weight: 700;
             color: #353535;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
         }
         .menu-card-content {
             font-size: 18px;
@@ -87,14 +104,16 @@
         }
         .card-more {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
+            margin-right: 25px;
         }
-    .div-btn {
-        align-self: center;
-    }
-    .btn {
-        margin-bottom: 40px;
-        width: 186px;
-    }
+        .div-btn {
+            align-self: center;
+        }
+        .btn {
+            margin-bottom: 40px;
+            width: 186px;
+        }
 }
 

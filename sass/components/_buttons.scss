@@ -32,6 +32,7 @@
 }
 
 .card-rathing {
+    position: relative;
     .liked {
         opacity: 0;
         transition: 500ms;
@@ -44,8 +45,6 @@
         position: absolute;
         opacity: 0;
         z-index: 2;
-        right: 10px;
-        bottom: 10px;
         height: 50px;
         width: 50px;
     }
@@ -53,3 +52,47 @@
         opacity: 1;
     }
 }
+
+.progress-button {
+    display:flex;
+    align-self: flex-end;     
+}
+   
+i {
+    color: #fff;
+    font-size: 25px;
+}
+
+article:hover {
+    .price {
+        margin-right: 69px;
+        transition: 600ms;
+    }
+     
+    .check-button {
+    display:flex;
+   justify-content: center;
+   align-items: center;
+    background-color: #99E2D0;
+    border: none;
+    width: 69px;
+    height: 72px;
+    border-radius: 0 15px 15px 0;
+    transform: scaleX(1);
+    transition: transform 1000ms cubic-bezier(.32, 0, .07, 1);
+     transform-origin: right;
+     animation: progress-bar 600ms;
+      animation-fill-mode: both;
+    }
+}
+
+@keyframes progress-bar{
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}  
+
+

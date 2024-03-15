@@ -1,5 +1,6 @@
 * {
-    font-family: "Roboto";
+    font-family: $font-family;
+    box-sizing: border-box;
 }
 
 a {
@@ -70,7 +71,7 @@ header {
         gap: 17px;
         align-items: center;
 
-        @media (min-width: 1024px) and (max-width: 1440px) {
+        @media (min-width: 720px) {
             flex-direction: row;
             justify-content: center;
             gap: 25px;
@@ -128,7 +129,7 @@ header {
             gap: 18px;
             padding-bottom: 66px;
 
-            @media (min-width: 1024px) and (max-width: 1440px) {
+            @media (min-width: 720px) {
                 align-content: center;
                 gap: 28px;   
                 padding-bottom: 30px;     
@@ -139,7 +140,7 @@ header {
                 flex-direction: column;
                 gap: 18px;
 
-                @media (min-width: 1024px) and (max-width: 1440px) {
+                @media (min-width: 720px) {
                     gap: 50px;       
                 }
             }
@@ -148,14 +149,14 @@ header {
                 flex-direction: column;
                 gap: 18px;
 
-                @media (min-width: 1024px) and (max-width: 1440px) {
+                @media (min-width: 720px) {
                     flex-direction: row;
                     gap: 100px;          
             }
             .card {
                 position: relative;
                 
-                @media (min-width: 1024px) and (max-width: 1440px) {
+                @media (min-width: 720px) {
                     width: 490px;
                 }
             }
@@ -197,7 +198,7 @@ header {
                     margin-top: 54px;
                     margin-bottom: 6px;
 
-                    @media (min-width: 1024px) and (max-width: 1440px) {
+                    @media (min-width: 720px) {
                         margin-bottom: 0px;
                     }
                 }

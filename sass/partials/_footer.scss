@@ -3,7 +3,7 @@ footer {
     background-color: #353535;
 
     .mentions {
-        @media (min-width: 1024px) and (max-width: 1440px) {
+        @media (min-width: 720px) {
             display: flex;
             justify-content: flex-end;
             gap: 9px;
@@ -19,7 +19,7 @@ footer {
         margin-top: 0px;
         margin-bottom: 16px;
 
-        @media (min-width: 1024px) and (max-width: 1440px) {
+        @media (min-width: 720px) {
             text-align: end;
             position: relative;
             top: 34px;
@@ -30,7 +30,7 @@ footer {
         display: flex;
         gap: 11px;
 
-        @media (min-width: 1024px) and (max-width: 1440px) {
+        @media (min-width: 720px) {
             position: relative;
             right: 50px;
         }

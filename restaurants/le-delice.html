@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 
@@ -24,78 +27,117 @@
         <section class="menu-card">        
             <div class="restaurant-title">
                 <h2>Le délice des sens</h2>
-                <img src="../assets/images/Icon/Like.svg" alt="Icône représentant un coeur">
+                <div class="card-rathing">
+                    <input type="checkbox" name="heart" id="heart"> 
+                    <label><img class="no-liked" src="../assets/images/Icon/Like.svg" alt="Icône reprsentant un symbole coeur vide"><img class="liked" src="../assets/images/Icon/Status-liked.svg" alt="Icône représentant un symbole coeur coloré"></label>
+                </div>
             </div>
             <div class="dishes">
                 <h3>ENTRÉES</h3>
-                <article>
-                    <h4 class="menu-card-content">Tartare de thon</h4>
+                <article>     
                     <div class="card-more">
+                        <h4 class="menu-card-content">Tartare de thon</h4>
                         <p>Assaisonné au yuzu</p>
+                    </div>
+                    <div class="progress-button"> 
                         <p class="price">25€</p>
-                    </div> 
+                        <div class="check-button">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>  
                 </article>
-                <article>
-                    <h4 class="menu-card-content">Bouchée de homard croustillant</h4>
+                <article>                    
                     <div class="card-more">
+                        <h4 class="menu-card-content">Bouchée de homard croustillant</h4>
                         <p>Et sa farandole de petits légumes</p>
+                    </div> 
+                    <div class="progress-button"> 
                         <p class="price">35€</p>
-                    </div> 
+                        <div class="check-button">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div> 
                 </article>
-                <article>
-                    <h4 class="menu-card-content">Poulet rôti aux herbes de Provence</h4>
-                    <div class="card-more">
+                <article>                  
+                    <div class="card-more"> 
+                        <h4 class="menu-card-content">Poulet rôti aux herbes de Provence</h4>
                         <p>Et sa crème de truffe</p>
+                    </div>
+                    <div class="progress-button"> 
                         <p class="price">40€</p>
-                    </div> 
+                        <div class="check-button">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>  
                 </article>
             </div>
             <div class="dishes">
                 <h3>PLATS</h3>
-                <article>
-                    <h4 class="menu-card-content">Poulet rôti aux herbes de Provence</h4>
+                <article>                   
                     <div class="card-more">
+                        <h4 class="menu-card-content">Poulet rôti aux herbes de Provence</h4>
                         <p>Et sa crème de truffe</p>
+                    </div>
+                    <div class="progress-button"> 
                         <p class="price">40€</p>
-                    </div>     
+                        <div class="check-button">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>      
                 </article>
-                <article>
-                    <h4 class="menu-card-content">Langoustine rôtie</h4>
+                <article>            
                     <div class="card-more">
+                        <h4 class="menu-card-content">Langoustine rôtie</h4>
                         <p>Et ses légumes de saison</p>
+                    </div>
+                    <div class="progress-button"> 
                         <p class="price">35€</p>
-                    </div> 
+                        <div class="check-button">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>  
                 </article>
-                <article>
-                    <h4 class="menu-card-content">Côte de boeuf Angus</h4>
+                <article>        
                     <div class="card-more">
+                        <h4 class="menu-card-content">Côte de boeuf Angus</h4>
                         <p>Et sa purée de panais</p>
+                    </div>
+                    <div class="progress-button"> 
                         <p class="price">44€</p>
-                    </div> 
+                        <div class="check-button">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>  
                 </article>
             </div>
             <div class="dishes">
                 <h3>DESSERTS</h3>
-                <article>
-                    <h4 class="menu-card-content">Farandole de desserts</h4>
+                <article>                    
                     <div class="card-more">
+                        <h4 class="menu-card-content">Farandole de desserts</h4>
                         <p>Du chef</p>
+                    </div> 
+                    <div class="progress-button"> 
                         <p class="price">18€</p>
-                    </div>     
+                        <div class="check-button">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>     
                 </article>
-                <article>
-                    <h4 class="menu-card-content">Crème brûlée</h4>
+                <article>                  
                     <div class="card-more">
+                        <h4 class="menu-card-content">Crème brûlée</h4>
                         <p>Revisitée</p>
+                    </div>
+                    <div class="progress-button"> 
                         <p class="price">22€</p>
-                    </div> 
+                        <div class="check-button">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>  
                 </article>
-                <article>
-                    <h4 class="menu-card-content">Tiramisu</h4>
+                <article>                   
                     <div class="card-more">
+                        <h4 class="menu-card-content">Tiramisu</h4>
                         <p>À la noisette</p>
+                    </div>
+                    <div class="progress-button"> 
                         <p class="price">23€</p>
-                    </div> 
+                        <div class="check-button">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>  
                 </article>
             </div>
             <div class="div-btn">

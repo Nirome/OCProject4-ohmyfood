@@ -1,5 +1,6 @@
 * {
-  font-family: "Roboto";
+  font-family: "roboto";
+  box-sizing: border-box;
 }
 
 a {
@@ -68,7 +69,7 @@ header #city {
   gap: 17px;
   align-items: center;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   .operation .operational-steps {
     flex-direction: row;
     justify-content: center;
@@ -126,7 +127,7 @@ header #city {
   gap: 18px;
   padding-bottom: 66px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   .restaurants .restaurants-cards {
     align-content: center;
     gap: 28px;
@@ -138,7 +139,7 @@ header #city {
   flex-direction: column;
   gap: 18px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   .restaurants .cards {
     gap: 50px;
   }
@@ -148,7 +149,7 @@ header #city {
   flex-direction: column;
   gap: 18px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   .restaurants .cards-rows {
     flex-direction: row;
     gap: 100px;
@@ -157,7 +158,7 @@ header #city {
 .restaurants .cards-rows .card {
   position: relative;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   .restaurants .cards-rows .card {
     width: 490px;
   }
@@ -199,7 +200,7 @@ header #city {
   margin-top: 54px;
   margin-bottom: 6px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   .restaurants h2 {
     margin-bottom: 0px;
   }
@@ -241,12 +242,10 @@ header #city {
   bottom: 42px;
   margin-bottom: -42px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   .menu-card {
-    margin-left: 193px;
-    margin-right: 192px;
-    padding-left: 210px;
-    padding-right: 211px;
+    margin: 0px 192px 0px 193px;
+    padding: 0px 211px 0px 210px;
   }
 }
 .menu-card .restaurant-title {
@@ -254,6 +253,10 @@ header #city {
   justify-content: center;
   gap: 30px;
   margin-top: 15px;
+}
+.menu-card img {
+  position: relative;
+  top: 30px;
 }
 .menu-card .dishes {
   display: flex;
@@ -264,11 +267,16 @@ header #city {
 }
 .menu-card article {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
   border-radius: 15px;
-  padding: 15px;
+  height: 72px;
   gap: 5px;
+  position: relative;
+}
+.menu-card .card-more {
+  padding: 15px;
+  overflow: hidden;
 }
 .menu-card h2 {
   font-family: "shrikhand";
@@ -290,11 +298,22 @@ header #city {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-card h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-card .price {
   font-size: 15px;
   font-weight: 700;
   color: #353535;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
 .menu-card .menu-card-content {
   font-size: 18px;
@@ -303,7 +322,9 @@ header #city {
 }
 .menu-card .card-more {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  margin-right: 25px;
 }
 .menu-card .div-btn {
   align-self: center;
@@ -344,6 +365,9 @@ header #city {
   transition: opacity 500ms;
 }
 
+.card-rathing {
+  position: relative;
+}
 .card-rathing .liked {
   opacity: 0;
   transition: 500ms;
@@ -356,8 +380,6 @@ header #city {
   position: absolute;
   opacity: 0;
   z-index: 2;
-  right: 10px;
-  bottom: 10px;
   height: 50px;
   width: 50px;
 }
@@ -365,11 +387,49 @@ header #city {
   opacity: 1;
 }
 
+.progress-button {
+  display: flex;
+  align-self: flex-end;
+}
+
+i {
+  color: #fff;
+  font-size: 25px;
+}
+
+article:hover .price {
+  margin-right: 69px;
+  transition: 600ms;
+}
+article:hover .check-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border: none;
+  width: 69px;
+  height: 72px;
+  border-radius: 0 15px 15px 0;
+  transform: scaleX(1);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transform-origin: right;
+  animation: progress-bar 600ms;
+  animation-fill-mode: both;
+}
+
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 footer {
   padding: 22px 25px;
   background-color: #353535;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   footer .mentions {
     display: flex;
     justify-content: flex-end;
@@ -385,7 +445,7 @@ footer h3 {
   margin-top: 0px;
   margin-bottom: 16px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   footer h3 {
     text-align: end;
     position: relative;
@@ -397,7 +457,7 @@ footer .footer-content {
   display: flex;
   gap: 11px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 720px) {
   footer .footer-content {
     position: relative;
     right: 50px;
@@ -411,6 +471,69 @@ footer p, footer a {
 }
 footer .font-weight-300 {
   font-weight: 300;
+}
+
+.section-loader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "roboto";
+  font-size: 40px;
+  background-color: #F6F6F6;
+  z-index: 2;
+  animation: fadeOut 0.5s 3s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-loader .loader-ohmyfood {
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+}
+.section-loader .loader-ohmyfood::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 50px;
+  height: 50px;
+  border: 6px solid transparent;
+  border-radius: 50px;
+  border-top-color: #9356DC;
+  animation: rotate 1s linear infinite;
+  animation-name: rotate;
+  animation-duration: 450ms, 600ms;
+  animation-timing-function: linear, ease;
+  animation-iteration-count: infinite, 1;
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

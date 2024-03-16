@@ -33,7 +33,7 @@
         display: flex;
         justify-content: center;
         gap: 30px;
-        margin-top: 15px;  
+        margin-top: 15px; 
     }
         img {
             position: relative;
@@ -114,6 +114,49 @@
         .btn {
             margin-bottom: 40px;
             width: 186px;
+        }         
+        .starters, .main-courses, .desserts {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .starters {
+            -webkit-animation: slide-in-left 1s ;
+	        animation: slide-in-left 1s ;
+        }
+        .main-courses {
+            -webkit-animation: slide-in-left 2s ;
+	        animation: slide-in-left 2s ;
+        }             
+        .desserts {
+            -webkit-animation: slide-in-left 3s ;
+	        animation: slide-in-left 3s ;
         }
 }
+
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+  
 

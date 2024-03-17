@@ -86,6 +86,16 @@ article:hover {
     .check-button {
        transform: scaleX(1); 
      }
+    .card-more {
+        overflow: hidden;
+        padding-right: 80px;
+        p, h4 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+    }
 }
 
 

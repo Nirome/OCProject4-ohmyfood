@@ -7,11 +7,9 @@
     height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: $font-family;
-    font-size: 40px;
     background-color: $grey-background;
     z-index: 2;
-    animation: fadeOut 0.5s 3s forwards;
+    animation: fadeOut 0.5s 2s forwards;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +17,8 @@
     .loader-ohmyfood {
         border-radius: 50px;
         border: 6px solid rgba(255,255,255,0.4);        
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         display: inline-block; 
         position: relative; 
     } 

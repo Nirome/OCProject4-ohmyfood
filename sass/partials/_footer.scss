@@ -3,7 +3,14 @@ footer {
     background-color: #353535;
 
     .mentions {
-        @media (min-width: 720px) {
+        @media (min-width: 700px) and (max-width: 1110px) {
+            display: flex;
+            justify-content: flex-end;
+            gap: 9px;
+            position: relative;
+            right: 139px;
+        }
+        @media (min-width: 1110px) {
             display: flex;
             justify-content: flex-end;
             gap: 9px;
@@ -18,8 +25,13 @@ footer {
         font-weight: 400;
         margin-top: 0px;
         margin-bottom: 16px;
-
-        @media (min-width: 720px) {
+        @media (min-width: 700px) and (max-width: 1110px) {
+            text-align: end;
+            position: relative;
+            top: 34px;
+            right: 8px;
+        }
+        @media (min-width: 1110px) {
             text-align: end;
             position: relative;
             top: 34px;
@@ -29,8 +41,11 @@ footer {
     .footer-content {
         display: flex;
         gap: 11px;
-
-        @media (min-width: 720px) {
+        @media (min-width: 700px) and (max-width: 1110px) {
+            position: relative;
+            right: 18px;
+        }
+        @media (min-width: 1110px) {
             position: relative;
             right: 50px;
         }

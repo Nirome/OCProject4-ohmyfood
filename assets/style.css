@@ -1,6 +1,5 @@
 * {
   font-family: "roboto";
-  box-sizing: border-box;
 }
 
 a {
@@ -21,7 +20,7 @@ header h1 {
   font-family: "shrikhand";
 }
 header .search-bar {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   height: 50px;
   width: 100%;
   display: flex;
@@ -35,7 +34,7 @@ header #city {
   border: none;
   font-size: 16px;
   color: #353535;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .info-group {
@@ -92,9 +91,7 @@ header #city {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  width: 100%;
-  margin-left: 19px;
-  padding-right: 55px;
+  margin: 0px 28px 0px 19px;
 }
 .operation .operating-step {
   display: flex;

@@ -1,103 +1,123 @@
 /****Effet au survol sur les boutons explorer et commander****/
 .btn {
-    border-radius: 25px;
-    background: linear-gradient(193deg, $primary-color -11.44%, $secondary-color 123.93%);
-    font-size: 16px;
-    height: 50px;
-    width: 218px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-    color: white;
-    border: none;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    &:hover {
-        &::after {
-            opacity: 1;
-        }
-    }
+  border-radius: 25px;
+  background: linear-gradient(
+    193deg,
+    $primary-color -11.44%,
+    $secondary-color 123.93%
+  );
+  font-size: 16px;
+  height: 50px;
+  width: 218px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  border: none;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
     &::after {
-        border-radius: 25px;
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 500ms;   
+      opacity: 1;
     }
+  }
+  &::after {
+    border-radius: 25px;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0.15) 100%
+      ),
+      linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 500ms;
+  }
 }
-
+/****Effet a survol des icônes fonctionnement****/
+.operating-icon {
+    position: relative;
+    right: 6px;
+    color: grey;
+    font-size: 20px;
+    transition: 500ms;
+    transition-delay: 150ms;
+  }
+.operating-step:hover {
+    .operating-icon {
+      color: $primary-color;
+    }
+  }
+  
 /****Remplissage du bouton like****/
 .card-rathing {
+  position: relative;
+  .liked {
+    opacity: 0;
+    transition: 500ms;
+  }
+  .no-liked {
     position: relative;
-    .liked {
-        opacity: 0;
-        transition: 500ms;
-    }
-    .no-liked {
-        position: relative;
-        left: 22px;
-    }
-    input {
-        position: absolute;
-        opacity: 0;
-        z-index: 2;
-        height: 50px;
-        width: 50px;
-    }
-    input:checked + label .liked {
-        opacity: 1;
-    }
+    left: 22px;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+  }
+  input:checked + label .liked {
+    opacity: 1;
+  }
 }
-/****bouton coche sur la page menu****/ 
+/****bouton coche sur la page menu****/
 .progress-button {
-    display:flex;
-    align-self: flex-end;    
-    i {
-        color: #fff;
-        font-size: 25px;
-    }
-    .check-button {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #99E2D0;
-        border: none;
-        width: 69px;
-        height: 72px;
-        border-radius: 0 15px 15px 0;
-        transform: scaleX(0);
-        transition: transform 600ms;
-        transform-origin: right;
-    }
-    .price {
-        transition: 600ms;    
-    } 
+  display: flex;
+  align-self: flex-end;
+  i {
+    color: #fff;
+    font-size: 25px;
+  }
+  .check-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    border: none;
+    width: 69px;
+    height: 72px;
+    border-radius: 0 15px 15px 0;
+    transform: scaleX(0);
+    transition: transform 600ms;
+    transform-origin: right;
+  }
+  .price {
+    transition: 600ms;
+  }
 }
 article:hover {
-    .price {
-       margin-right: 69px;       
-    }    
-    .check-button {
-       transform: scaleX(1); 
-     }
-    .card-more {
-        overflow: hidden;
-        padding-right: 80px;
-        p, h4 {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
+  .price {
+    margin-right: 69px;
+  }
+  .check-button {
+    transform: scaleX(1);
+  }
+  .card-more {
+    overflow: hidden;
+    padding-right: 80px;
+    p,
+    h4 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
+  }
 }
-
-
-
 

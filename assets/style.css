@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "roboto";
   box-sizing: border-box;
@@ -410,11 +411,25 @@ header #city {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   opacity: 0;
   z-index: -1;
   transition: opacity 500ms;
+}
+
+/****Effet a survol des icônes fonctionnement****/
+.operating-icon {
+  position: relative;
+  right: 6px;
+  color: grey;
+  font-size: 20px;
+  transition: 500ms;
+  transition-delay: 150ms;
+}
+
+.operating-step:hover .operating-icon {
+  color: #9356DC;
 }
 
 /****Remplissage du bouton like****/
@@ -453,7 +468,7 @@ header #city {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border: none;
   width: 69px;
   height: 72px;
@@ -476,7 +491,8 @@ article:hover .card-more {
   overflow: hidden;
   padding-right: 80px;
 }
-article:hover .card-more p, article:hover .card-more h4 {
+article:hover .card-more p,
+article:hover .card-more h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

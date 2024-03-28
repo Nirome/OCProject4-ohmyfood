@@ -17,7 +17,7 @@ header {
 header h1 {
   height: 2.75rem;
   width: 10.125rem;
-  margin: 14px 89px 13px 89px;
+  margin: 14px 142px 13px 89px;
   padding: 0 19px 0 16px;
   font-family: "shrikhand";
 }
@@ -30,7 +30,7 @@ header .search-bar {
   align-items: center;
   gap: 17px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  padding-left: 100px;
+  padding-left: 54px;
 }
 header #city {
   border: none;
